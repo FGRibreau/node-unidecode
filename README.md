@@ -1,0 +1,30 @@
+Unidecode for NodeJS
+====================
+
+Unidecode is JavaScript port of the perl module Text::Unicode. It takes UTF-8 data and tries to represent it in US-ASCII characters
+(i.e., the universally displayable characters between 0x00 and 0x7F). The representation is almost always an attempt at transliteration
+-- i.e., conveying, in Roman letters, the pronunciation expressed by the text in some other writing system.
+
+See data/perl_source/README for the original README file, including methodology and limitations.
+
+Note that all the files named 'x??.php' in data are derived directly from the equivilent perl file, and both sets of files are distributed under the perl license,
+and not the BSD license.
+
+## Installation
+
+    $ npm install unidecode
+
+## Usage
+
+    $ node
+    > var unidecode = require('unidecode');
+    > unidecode("aéà)àçé");
+    'aea)ace'
+    > unidecode("に間違いがないか、再度確認してください。再読み込みしてください。");
+    'niJian Wei iganaika, Zai Du Que Ren sitekudasai. Zai Du miIp misitekudasai. '
+
+## Todo
+
+ * Port Text::Unicode unit-test to JavaScript
+
+__I accept pull-request !__
