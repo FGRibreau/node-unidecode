@@ -28,6 +28,9 @@ function unidecode_internal_replace(match) {
     var h = utf16 >> 8;
     var l = utf16 & 0xFF;
 
+    //(d7) 215 > h < 249 (f9) no supported
+    if(h > 215 && h < 249) return '';
+
     if (!tr[h]) {
       tr[h] = require("./data/x" + dec2hex(h) + ".js");
     }
@@ -37,7 +40,7 @@ function unidecode_internal_replace(match) {
 };
 
 function dec2hex(i) {
-   return (i+0x100).toString(16).substr(-2).toUpperCase();
+   return (i+0x100).toString(16).substr(-2);
 }
 
 function utf8_to_utf16(raw) {
