@@ -28,11 +28,19 @@ function unidecode_internal_replace(match) {
     var h = utf16 >> 8;
     var l = utf16 & 0xFF;
 
+    // (18) 18 > h < 1e (30)
+    if (h > 24 && h < 30) return '';
+
     //(d7) 215 > h < 249 (f9) no supported
-    if(h > 215 && h < 249) return '';
+    if (h > 215 && h < 249) return '';
 
     if (!tr[h]) {
-      tr[h] = require("./data/x" + dec2hex(h) + ".js");
+      try {
+        tr[h] = require("./data/x" + dec2hex(h) + ".js");
+      } catch (e) {
+        console.error("Unidecode file not found for h=", h);
+        return '';
+      }
     }
 
     return tr[h][l];
@@ -40,7 +48,7 @@ function unidecode_internal_replace(match) {
 };
 
 function dec2hex(i) {
-   return (i+0x100).toString(16).substr(-2);
+  return (i + 0x100).toString(16).substr(-2);
 }
 
 function utf8_to_utf16(raw) {
@@ -85,6 +93,7 @@ function utf8_to_utf16(raw) {
 }
 
 /* From php.js */
+
 function ord(string) {
   // Returns the codepoint value of a character
   //
