@@ -8,8 +8,7 @@ __Unidecode__ is __JavaScript port__ of the __perl module [Text::Unicode](http:/
 
 See [Text::Unicode](http://search.cpan.org/~sburke/Text-Unidecode-0.04/lib/Text/Unidecode.pm) for the original README file, including methodology and limitations.
 
-Note that all the files named 'x??.php' in data are derived directly from the equivilent perl file, and both sets of files are distributed under the perl license,
-and not the BSD license.
+Note that all the files named 'x??.php' in data are derived directly from the equivalent perl file, and both sets of files are distributed under the perl license not the BSD license.
 
 ## Installation
 
