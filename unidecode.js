@@ -38,7 +38,7 @@ function unidecode_internal_replace(match) {
       try {
         tr[h] = require("./data/x" + dec2hex(h) + ".js");
       } catch (e) {
-        console.error("Unidecode file not found for h=", h);
+        // console.error("Unidecode file not found for h=", h);
         return '';
       }
     }
