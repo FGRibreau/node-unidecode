@@ -15,7 +15,7 @@ var tr = {};
 var utf8_rx = /(?![\x00-\x7F]|[\xC0-\xDF][\x80-\xBF]|[\xE0-\xEF][\x80-\xBF]{2}|[\xF0-\xF7][\x80-\xBF]{3})./g;
 
 module.exports = function(str) {
-  return str.replace(utf8_rx, unidecode_internal_replace).replace(/[  ] /g, ' ').trim();
+  return str.replace(utf8_rx, unidecode_internal_replace).replace(/  /g, ' ').trim();
 };
 
 function unidecode_internal_replace(match) {
