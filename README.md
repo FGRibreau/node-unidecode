@@ -1,4 +1,4 @@
-# Unidecode for NodeJS [![Gittip](http://badgr.co/gittip/fgribreau.png)](https://www.gittip.com/fgribreau/)
+# Unidecode for NodeJS
 -----------------
 
 
