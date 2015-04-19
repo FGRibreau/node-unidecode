@@ -16,7 +16,7 @@
 var tr = {};
 var utf8_rx = /(?![\x00-\x7F]|[\xC0-\xDF][\x80-\xBF]|[\xE0-\xEF][\x80-\xBF]{2}|[\xF0-\xF7][\x80-\xBF]{3})./g;
 
-module.exports = function(str) {
+module.exports = function (str) {
   return str.replace(utf8_rx, unidecode_internal_replace);
 };
 
@@ -594,8 +594,8 @@ function dec2hex(i) {
 
 function utf8_to_utf16(raw) {
   var b1, b2, b3, b4,
-      x, y, z;
-  
+    x, y, z;
+
   while (Array.isArray(raw)) raw = raw[0];
 
   switch (raw.length) {

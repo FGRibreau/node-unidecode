@@ -27,6 +27,8 @@ Note that all the files named 'x??.js' in data are derived directly from the equ
 
  * Port Text::Unicode unit-test to JavaScript
 
+## [Changelog](/CHANGELOG.md)
+
 ## Donate
 [Donate Bitcoins](https://coinbase.com/checkouts/fc3041b9d8116e0b98e7d243c4727a30)
 
