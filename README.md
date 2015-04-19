@@ -1,5 +1,5 @@
-# Unidecode for NodeJS
---
+# Unidecode for NodeJS [![Gittip](http://badgr.co/gittip/fgribreau.png)](https://www.gittip.com/fgribreau/)
+-----------------
 
 
 __Unidecode__ is __JavaScript port__ of the __perl module [Text::Unicode](http://search.cpan.org/~sburke/Text-Unidecode-0.04/lib/Text/Unidecode.pm)__. It takes UTF-8 data and tries to represent it in US-ASCII characters
@@ -26,5 +26,8 @@ Note that all the files named 'x??.js' in data are derived directly from the equ
 ## Todo
 
  * Port Text::Unicode unit-test to JavaScript
+
+## Donate
+[Donate Bitcoins](https://coinbase.com/checkouts/fc3041b9d8116e0b98e7d243c4727a30)
 
 __I accept pull-request !__

@@ -11,6 +11,8 @@
  * Based on the port of unidecode for php
  */
 
+'use strict';
+
 var tr = {};
 var utf8_rx = /(?![\x00-\x7F]|[\xC0-\xDF][\x80-\xBF]|[\xE0-\xEF][\x80-\xBF]{2}|[\xF0-\xF7][\x80-\xBF]{3})./g;
 
@@ -45,13 +47,16 @@ function unidecode_internal_replace(match) {
 
     return tr[h][l];
   }
-};
+}
 
 function dec2hex(i) {
   return (i + 0x100).toString(16).substr(-2);
 }
 
 function utf8_to_utf16(raw) {
+  var b1, b2, b3, b4,
+      x, y, z;
+  
   while (Array.isArray(raw)) raw = raw[0];
 
   switch (raw.length) {
@@ -60,8 +65,8 @@ function utf8_to_utf16(raw) {
 
     // http://en.wikipedia.org/wiki/UTF-8
   case 2:
-    var b1 = ord(raw.substr(0, 1));
-    var b2 = ord(raw.substr(1, 1));
+    b1 = ord(raw.substr(0, 1));
+    b2 = ord(raw.substr(1, 1));
 
     x = ((b1 & 0x03) << 6) | (b2 & 0x3F);
     y = (b1 & 0x1C) >> 2;
@@ -69,9 +74,9 @@ function utf8_to_utf16(raw) {
     return (y << 8) | x;
 
   case 3:
-    var b1 = ord(raw.substr(0, 1));
-    var b2 = ord(raw.substr(1, 1));
-    var b3 = ord(raw.substr(2, 1));
+    b1 = ord(raw.substr(0, 1));
+    b2 = ord(raw.substr(1, 1));
+    b3 = ord(raw.substr(2, 1));
 
     x = ((b2 & 0x03) << 6) | (b3 & 0x3F);
     y = ((b1 & 0x0F) << 4) | ((b2 & 0x3C) >> 2);
@@ -79,10 +84,10 @@ function utf8_to_utf16(raw) {
     return (y << 8) | x;
 
   default:
-    var b1 = ord(raw.substr(0, 1));
-    var b2 = ord(raw.substr(1, 1));
-    var b3 = ord(raw.substr(2, 1));
-    var b4 = ord(raw.substr(3, 1));
+    b1 = ord(raw.substr(0, 1));
+    b2 = ord(raw.substr(1, 1));
+    b3 = ord(raw.substr(2, 1));
+    b4 = ord(raw.substr(3, 1));
 
     x = ((b3 & 0x03) << 6) | (b4 & 0x3F);
     y = ((b2 & 0x0F) << 4) | ((b3 & 0x3C) >> 2);
