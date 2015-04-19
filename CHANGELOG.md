@@ -1,8 +1,8 @@
 # Change Log
 
-## [Unreleased](https://github.com/fgribreau/node-unidecode/tree/HEAD)
+## [v0.1.6](https://github.com/fgribreau/node-unidecode/tree/v0.1.6) (2015-04-19)
 
-[Full Changelog](https://github.com/fgribreau/node-unidecode/compare/v0.1.5...HEAD)
+[Full Changelog](https://github.com/fgribreau/node-unidecode/compare/v0.1.5...v0.1.6)
 
 **Merged pull requests:**
 
