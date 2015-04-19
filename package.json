@@ -6,16 +6,18 @@
     "unicode",
     "utf8"
   ],
-  "version": "0.1.4",
+  "version": "0.1.5",
   "homepage": "http://blog.fgribreau.com/2012/05/unidecode-for-javascript-nodejs.html",
   "dependencies": {},
   "repository": "git@github.com:FGRibreau/node-unidecode.git",
   "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com)",
   "main": "./unidecode",
-  "licenses": [{
-    "type": "BSD",
-    "url": "http://github.com/FGRibreau/node-unidecode/blob/master/LICENSE"
-  }],
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "http://github.com/FGRibreau/node-unidecode/blob/master/LICENSE"
+    }
+  ],
   "scripts": {
     "test": "mocha",
     "lint": "jshint *.js */*.js"
