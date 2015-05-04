@@ -23,10 +23,6 @@ Note that all the files named 'x??.js' in data are derived directly from the equ
     > unidecode("に間違いがないか、再度確認してください。再読み込みしてください。");
     'niJian Wei iganaika, Zai Du Que Ren sitekudasai. Zai Du miIp misitekudasai. '
 
-## Todo
-
- * Port Text::Unicode unit-test to JavaScript
-
 ## [Changelog](/CHANGELOG.md)
 
 ## Donate
