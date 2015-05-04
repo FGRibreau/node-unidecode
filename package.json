@@ -6,7 +6,7 @@
     "unicode",
     "utf8"
   ],
-  "version": "0.1.6",
+  "version": "0.1.7",
   "homepage": "http://blog.fgribreau.com/2012/05/unidecode-for-javascript-nodejs.html",
   "dependencies": {},
   "repository": "git@github.com:FGRibreau/node-unidecode.git",
