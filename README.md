@@ -3,7 +3,7 @@
 
 [![Circle CI](https://circleci.com/gh/FGRibreau/node-unidecode.svg?style=svg)](https://circleci.com/gh/FGRibreau/node-unidecode) [![Deps](https://david-dm.org/FGRibreau/unidecode.png)](https://david-dm.org/FGRibreau/unidecode) [![Version](http://badge.fury.io/js/unidecode.png)](http://badge.fury.io/js/unidecode) [![Downloads](http://img.shields.io/npm/dm/unidecode.svg)](https://www.npmjs.com/package/mailchecker)
 
-[![NPM](https://nodei.co/npm/unidecode.png?downloadRank=true)] [![NPM](https://nodei.co/npm-dl/unidecode.png?months=3&height=2)]
+![NPM](https://nodei.co/npm/unidecode.png?downloadRank=true) ![NPM](https://nodei.co/npm-dl/unidecode.png?months=3&height=2)
 
 __Unidecode__ is __JavaScript port__ of the __perl module [Text::Unicode](http://search.cpan.org/~sburke/Text-Unidecode-0.04/lib/Text/Unidecode.pm)__. It takes UTF-8 data and tries to represent it in US-ASCII characters
 (i.e., the universally displayable characters between 0x00 and 0x7F). The representation is almost always an attempt at transliteration
