@@ -1,21 +1,36 @@
 # Change Log
 
-## [v0.1.6](https://github.com/fgribreau/node-unidecode/tree/v0.1.6) (2015-04-19)
+## [v0.1.8](https://github.com/fgribreau/node-unidecode/tree/v0.1.8) (2015-12-06)
+[Full Changelog](https://github.com/fgribreau/node-unidecode/compare/v0.1.7...v0.1.8)
 
+**Merged pull requests:**
+
+- removing ` for letter ع in unicode x0639 [\#12](https://github.com/FGRibreau/node-unidecode/pull/12) ([cartove](https://github.com/cartove))
+
+## [v0.1.7](https://github.com/fgribreau/node-unidecode/tree/v0.1.7) (2015-05-04)
+[Full Changelog](https://github.com/fgribreau/node-unidecode/compare/v0.1.6...v0.1.7)
+
+**Closed issues:**
+
+- todo-note about test in readme [\#10](https://github.com/FGRibreau/node-unidecode/issues/10)
+- npm requires update [\#9](https://github.com/FGRibreau/node-unidecode/issues/9)
+
+**Merged pull requests:**
+
+- remove note about tests \#fix 10 [\#11](https://github.com/FGRibreau/node-unidecode/pull/11) ([iamstarkov](https://github.com/iamstarkov))
+
+## [v0.1.6](https://github.com/fgribreau/node-unidecode/tree/v0.1.6) (2015-04-19)
 [Full Changelog](https://github.com/fgribreau/node-unidecode/compare/v0.1.5...v0.1.6)
 
 **Merged pull requests:**
 
 - Bundler friendly \(and ES6 compatible\) requires [\#5](https://github.com/FGRibreau/node-unidecode/pull/5) ([medikoo](https://github.com/medikoo))
-
 - Add transliteration for 一 \(U4E00\) [\#4](https://github.com/FGRibreau/node-unidecode/pull/4) ([halfdan](https://github.com/halfdan))
 
 ## [v0.1.5](https://github.com/fgribreau/node-unidecode/tree/v0.1.5) (2015-04-19)
-
 [Full Changelog](https://github.com/fgribreau/node-unidecode/compare/v0.1.4...v0.1.5)
 
 ## [v0.1.4](https://github.com/fgribreau/node-unidecode/tree/v0.1.4) (2015-04-19)
-
 **Fixed bugs:**
 
 - Error: Cannot find module './data/x1d.js' [\#1](https://github.com/FGRibreau/node-unidecode/issues/1)
@@ -23,9 +38,7 @@
 **Merged pull requests:**
 
 - Lint and fix bad escaping [\#8](https://github.com/FGRibreau/node-unidecode/pull/8) ([commenthol](https://github.com/commenthol))
-
 - Testcases [\#7](https://github.com/FGRibreau/node-unidecode/pull/7) ([commenthol](https://github.com/commenthol))
-
 - fix replacement for \[ [\#3](https://github.com/FGRibreau/node-unidecode/pull/3) ([c089](https://github.com/c089))
 
 
