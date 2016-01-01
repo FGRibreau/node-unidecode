@@ -1,7 +1,7 @@
 # Unidecode for NodeJS
 -----------------
 
-[![Circle CI](https://circleci.com/gh/FGRibreau/node-unidecode.svg?style=svg)](https://circleci.com/gh/FGRibreau/node-unidecode) [![Deps](https://david-dm.org/FGRibreau/node-unidecode.png)](https://david-dm.org/FGRibreau/node-unidecode) [![Version](http://badge.fury.io/js/unidecode.png)](http://badge.fury.io/js/unidecode) [![Downloads](http://img.shields.io/npm/dm/unidecode.svg)](https://www.npmjs.com/package/mailchecker)
+[![Circle CI](https://circleci.com/gh/FGRibreau/node-unidecode.svg?style=svg)](https://circleci.com/gh/FGRibreau/node-unidecode) [![Deps](https://david-dm.org/FGRibreau/node-unidecode.png)](https://david-dm.org/FGRibreau/node-unidecode) [![Version](http://badge.fury.io/js/unidecode.png)](http://badge.fury.io/js/unidecode) [![Downloads](http://img.shields.io/npm/dm/unidecode.svg)](https://www.npmjs.com/package/mailchecker) ![extra](https://img.shields.io/badge/actively%20maintained-yes-ff69b4.svg)
 
 ![NPM](https://nodei.co/npm/unidecode.png?downloadRank=true) ![NPM](https://nodei.co/npm-dl/unidecode.png?months=3&height=2)
 
