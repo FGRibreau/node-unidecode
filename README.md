@@ -30,6 +30,7 @@ Note that all the files named 'x??.js' in data are derived directly from the equ
 
 ## Donate
 
-[Paypal](paypal.me/fgribreau)
+I maintain this project in my free time, if it helped you please support my work via [paypal](https://paypal.me/fgribreau) or [bitcoins](https://www.coinbase.com/fgribreau), thanks a lot!
+
 
 __I accept pull-request !__
