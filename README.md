@@ -5,7 +5,7 @@
 
 [![Circle CI](https://img.shields.io/circleci/project/FGRibreau/node-unidecode/master.svg)](https://circleci.com/gh/FGRibreau/node-unidecode) [![Deps](https://img.shields.io/david/FGRibreau/node-unidecode.svg)](https://david-dm.org/FGRibreau/node-unidecode) [![Version](https://img.shields.io/npm/v/unidecode.svg)](http://badge.fury.io/js/unidecode) [![Downloads](http://img.shields.io/npm/dm/unidecode.svg)](https://www.npmjs.com/package/mailchecker) ![extra](https://img.shields.io/badge/actively%20maintained-yes-ff69b4.svg) 
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/fgribreau.svg?style=flat)](https://twitter.com/FGRibreau) [![available-for-advisory](https://img.shields.io/badge/available%20for%20advising-yes-ff69b4.svg?)](http://bit.ly/2c7uFJq)
+[![Twitter Follow](https://img.shields.io/twitter/follow/fgribreau.svg?style=flat)](https://twitter.com/FGRibreau)  [![available-for-advisory](https://img.shields.io/badge/available%20for%20consulting%20advisory-yes-ff69b4.svg?)](http://bit.ly/2c7uFJq)
 
 ![NPM](https://nodei.co/npm/unidecode.png?downloadRank=true) ![NPM](https://nodei.co/npm-dl/unidecode.png?months=3&height=2)
 
