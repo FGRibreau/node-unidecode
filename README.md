@@ -15,6 +15,13 @@ See [Text::Unicode](http://search.cpan.org/~sburke/Text-Unidecode-0.04/lib/Text/
 
 Note that all the files named 'x??.js' in data are derived directly from the equivalent perl file, and both sets of files are distributed under the perl license not the BSD license.
 
+
+## ❤️ Shameless plug
+
+- [Open-Source self-hostable or fully-managed **webhook as a service**](https://www.hook0.com/)
+- [Looking for a managed Keycloak IAM ?](https://www.cloud-iam.com/)
+- [**Charts, simple as a URL**. No more server-side rendering pain, 1 url = 1 chart](https://image-charts.com)
+
 ## Installation
 
     $ npm install unidecode
