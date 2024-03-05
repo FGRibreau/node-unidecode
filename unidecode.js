@@ -16,25 +16,32 @@
 var tr = {};
 var utf8_rx = /(?![\x00-\x7F]|[\xC0-\xDF][\x80-\xBF]|[\xE0-\xEF][\x80-\xBF]{2}|[\xF0-\xF7][\x80-\xBF]{3})./g;
 
-module.exports = function (str) {
-  return str.replace(utf8_rx, unidecode_internal_replace);
+module.exports = function (str, sub) {
+  return str.replace(utf8_rx, function (match) {
+    return unidecode_internal_replace(match, sub);
+  });
 };
 
-function unidecode_internal_replace(match) {
+function unidecode_internal_replace(match, sub) {
+  // Default sub to empty string
+  if (sub === null || sub === undefined) {
+    sub = '';
+  }
+
   var utf16 = utf8_to_utf16(match);
 
   if (utf16 > 0xFFFF) {
-    return '_';
+    return sub;
   } else {
 
     var h = utf16 >> 8;
     var l = utf16 & 0xFF;
 
     // (18) 18 > h < 1e (30)
-    if (h > 24 && h < 30) return '';
+    if (h > 24 && h < 30) return sub;
 
     //(d7) 215 > h < 249 (f9) no supported
-    if (h > 215 && h < 249) return '';
+    if (h > 215 && h < 249) return sub;
 
     if (!tr[h]) {
       switch (dec2hex(h)) {
@@ -580,11 +587,15 @@ function unidecode_internal_replace(match) {
         break;
       default:
         // console.error("Unidecode file not found for h=", h);
-        return '';
+        return sub;
       }
     }
 
-    return tr[h][l];
+    if (tr[h][l]) {
+      return tr[h][l];
+    } else {
+      return sub;
+    }
   }
 }
 
