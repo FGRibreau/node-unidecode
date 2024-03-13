@@ -21,7 +21,7 @@
     "test": "mocha",
     "lint": "jshint *.js */*.js",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "changelog-git": "npm run changelog && git add src/static/changelog/CHANGELOG.md && git commit -m 'docs(changelog): updated' && git push origin master",
+    "changelog-git": "npm run changelog && git add CHANGELOG.md && git commit -m 'docs(changelog): updated' && git push origin master",
     "release-major": "npm run test && npm run changelog-git && npm-release major",
     "release-minor": "npm run test && npm run changelog-git && npm-release minor",
     "release-patch": "npm run test && npm run changelog-git && npm-release patch"
