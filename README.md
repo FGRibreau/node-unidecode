@@ -35,6 +35,19 @@ Note that all the files named 'x??.js' in data are derived directly from the equ
     > unidecode("に間違いがないか、再度確認してください。再読み込みしてください。");
     'niJian Wei iganaika, Zai Du Que Ren sitekudasai. Zai Du miIp misitekudasai. '
 
+## Advanced Usage
+
+### Custom Substitution Values
+
+For values that cannot be translated, empty strings are returned. You can override this behavior by passing a custom substitution value as the second argument to `unidecode`:
+
+    $ node
+    > var unidecode = require('unidecode');
+    > unidecode("ab\uFFFFc", "X");
+    'abXc'
+    > unidecode("ab\uFFFFc");
+    'abc'
+
 ## [Changelog](/CHANGELOG.md)
 
 ## Donate

@@ -81,3 +81,19 @@ describe('# Complex tests', function(){
 		});
 	});
 });
+
+describe('# Custom substitution value tests', function(){
+
+	var tests = [
+		["ab\uFFFFc", "X", "abXc"],
+		["12\ud900\u1b003", " ", "12  3"]
+	];
+	
+	tests.forEach(function(test) {
+		it('{' + test[1] + '} ' + test[0] + '-->' + test[2], function(){
+			var exp = test[2];
+			var res = unidecode(test[0], test[1]);
+			assert.equal(res, exp);
+		});
+	});
+});
