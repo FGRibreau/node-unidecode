@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/FGRibreau/node-unidecode/compare/v1.0.0...v1.0.1) (2024-03-13)
+
+
+
+# [1.0.0](https://github.com/FGRibreau/node-unidecode/compare/v0.1.8...v1.0.0) (2024-03-13)
+
+
+
 ## [0.1.8](https://github.com/FGRibreau/node-unidecode/compare/v0.1.7...v0.1.8) (2015-12-06)
 
 
