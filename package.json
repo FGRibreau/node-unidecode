@@ -8,25 +8,33 @@
   ],
   "version": "0.1.8",
   "homepage": "https://blog.fgribreau.com/2012/05/unidecode-for-javascript-nodejs.html",
-  "dependencies": {},
   "repository": "git@github.com:FGRibreau/node-unidecode.git",
   "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (https://fgribreau.com)",
   "main": "./unidecode.js",
   "licenses": [
     {
       "type": "BSD",
-      "url": "http://github.com/FGRibreau/node-unidecode/blob/master/LICENSE"
+      "url": "https://github.com/FGRibreau/node-unidecode/blob/master/LICENSE"
     }
   ],
   "scripts": {
     "test": "mocha",
-    "lint": "jshint *.js */*.js"
+    "lint": "jshint *.js */*.js",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "changelog-git": "npm run changelog && git add src/static/changelog/CHANGELOG.md && git commit -m 'docs(changelog): updated' && git push origin master",
+    "release-major": "npm run test && npm run changelog-git && npm-release major",
+    "release-minor": "npm run test && npm run changelog-git && npm-release minor",
+    "release-patch": "npm run test && npm run changelog-git && npm-release patch"
   },
   "engines": {
     "node": ">= 0.4.12"
   },
   "devDependencies": {
+    "conventional-changelog-cli": "^4.1.0",
     "jshint": "^2.5.11",
-    "mocha": "^2.0.1"
+    "mocha": "^10.3.0"
+  },
+  "volta": {
+    "node": "20.11.1"
   }
 }

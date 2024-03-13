@@ -1,6 +1,6 @@
 /**
  * Tests are taken from Text-Unidecode-0.04/test.pl
- * 
+ *
  * @see <http://search.cpan.org/~sburke/Text-Unidecode-0.04/lib/Text/Unidecode.pm>
  */
 
@@ -14,7 +14,7 @@ var unidecode = require('../unidecode');
 describe('# Purity tests', function(){
 	var code;
 	var tests = [];
-	
+
 	for(code=0; code<=127; code++) {
 		tests.push(String.fromCharCode(code));
 	}
@@ -37,9 +37,9 @@ describe('# Basic string tests', function(){
 		"\r\n", // "\cm\cj" - perl control chars Ctrl+M, CTRL+J === \r\n
 		"I like pie.\n",
 	];
-	
+
 	tests.forEach(function(test) {
-		it(test, function(){
+		it(String(test), function(){
 			var exp = test;
 			var res = unidecode(test.toString());
 			assert.equal(res, exp);
@@ -72,7 +72,7 @@ describe('# Complex tests', function(){
 		["\u3052\u3093\u307e\u3044\u8336", "genmaiCha "],
 		//  Japanese, astonishingly unmangled.
 	];
-	
+
 	tests.forEach(function(test) {
 		it(test[0] + '-->' + test[1], function(){
 			var exp = test[1];
@@ -88,7 +88,7 @@ describe('# Custom substitution value tests', function(){
 		["ab\uFFFFc", "X", "abXc"],
 		["12\ud900\u1b003", " ", "12  3"]
 	];
-	
+
 	tests.forEach(function(test) {
 		it('{' + test[1] + '} ' + test[0] + '-->' + test[2], function(){
 			var exp = test[2];
