@@ -71,6 +71,10 @@ describe('# Complex tests', function(){
 		//  Yes, if we were doing it right, that'd be "malayaalam", not "mlyaalm"
 		["\u3052\u3093\u307e\u3044\u8336", "genmaiCha "],
 		//  Japanese, astonishingly unmangled.
+		["안녕하세요", "annyeonghaseyo"],
+		["자동차", "jadongcha"],
+		["차", "cha"],
+		["초", "cho"],
 	];
 
 	tests.forEach(function(test) {
