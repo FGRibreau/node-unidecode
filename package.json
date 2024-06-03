@@ -6,7 +6,7 @@
     "unicode",
     "utf8"
   ],
-  "version": "1.0.1",
+  "version": "1.1.0",
   "homepage": "https://blog.fgribreau.com/2012/05/unidecode-for-javascript-nodejs.html",
   "repository": "git@github.com:FGRibreau/node-unidecode.git",
   "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (https://fgribreau.com)",
