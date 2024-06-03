@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/FGRibreau/node-unidecode/compare/v1.0.1...v1.1.0) (2024-06-03)
+
+
+### Features
+
+* update data files ([43f9252](https://github.com/FGRibreau/node-unidecode/commit/43f9252833306f1b631532f2234454149751a04a))
+
+
+
 ## [1.0.1](https://github.com/FGRibreau/node-unidecode/compare/v1.0.0...v1.0.1) (2024-03-13)
 
 
