@@ -117,6 +117,21 @@ function unidecode_internal_replace(match, sub) {
       case '18':
         tr[h] = require('./data/x18');
         break;
+        case '19':
+          tr[h] = require('./data/x19');
+          break;
+        case '1a':
+          tr[h] = require('./data/x1a');
+          break;
+        case '1b':
+          tr[h] = require('./data/x1b');
+          break;
+        case '1c':
+          tr[h] = require('./data/x1c');
+          break;
+        case '1d':
+          tr[h] = require('./data/x1d');
+          break;
       case '1e':
         tr[h] = require('./data/x1e');
         break;
