@@ -11,6 +11,7 @@
   "repository": "git@github.com:FGRibreau/node-unidecode.git",
   "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (https://fgribreau.com)",
   "main": "./unidecode.js",
+  "type": "commonjs",
   "licenses": [
     {
       "type": "BSD",
